@@ -72,6 +72,7 @@ public class CalculadoraDesconto extends JFrame implements ActionListener {
                 //faz aparecer no campo valor com desconto
                 campoValorComDesconto.setText(formato.format(valorComDesconto));
             }
+               //aqui é a exception quando da erro na hora de formatar o valor inserido, ent aparece a mensagem para inserir os valores
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(this, "Por favor, insira valores válidos.", "Erro", JOptionPane.ERROR_MESSAGE);
         }
